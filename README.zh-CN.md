@@ -47,9 +47,12 @@ pnpm dev:web    # 浏览器预览
 pnpm lint       # ESLint
 pnpm typecheck  # tsc --noEmit
 pnpm test       # vitest
+pnpm test:e2e   # 构建 Electron 桌面应用并运行 Playwright 端到端测试
 pnpm build      # 桌面三进程包
 pnpm build:web  # 浏览器静态产物
 ```
+
+在无图形界面的 Linux 上运行 `xvfb-run -a pnpm test:e2e`。测试使用项目的 Electron 可执行文件，每个用例独享一份临时用户配置。失败时可在 `test-results/` 中查看 Playwright 跟踪文件。
 
 ## 项目结构
 

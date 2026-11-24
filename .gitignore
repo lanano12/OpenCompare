@@ -12,6 +12,7 @@ dist/
 # under .munk/baseline/domains/release/ committable)
 /release/
 coverage/
+/test-results/
 *.tsbuildinfo
 .DS_Store
 *.log

@@ -23,6 +23,7 @@
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "test": "vitest run",
+    "test:e2e": "electron-vite build && playwright test",
     "test:watch": "vitest",
     "measure:symlink": "vitest run --config vitest.evidence.config.mts",
     "measure:syntax": "vitest run --config vitest.evidence.config.mts scripts/syntax-perf.evidence.test.ts",
@@ -56,6 +57,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.65.1",
     "@tailwindcss/vite": "^4.3.3",
     "@testing-library/dom": "^10.4.2",
     "@testing-library/react": "^16.3.3",

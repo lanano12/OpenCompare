@@ -47,9 +47,12 @@ pnpm dev:web    # browser preview
 pnpm lint       # ESLint
 pnpm typecheck  # tsc --noEmit
 pnpm test       # vitest
+pnpm test:e2e   # build and test the Electron app with Playwright
 pnpm build      # desktop bundles
 pnpm build:web  # browser bundle
 ```
+
+On headless Linux, run `xvfb-run -a pnpm test:e2e`. The suite uses the project's Electron binary and a fresh profile for each test. Failed runs retain a trace in `test-results/`.
 
 ## Project structure
 
